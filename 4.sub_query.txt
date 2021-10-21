@@ -1,0 +1,2 @@
+1.SELECT pwr_price,100 * pwr_price / (SELECT SUM(pwr_price) FROM `photographers_wage_rates`) FROM `photographers_wage_rates`
+2.SELECT * FROM `photographers` WHERE pwr_email > (SELECT AVG(pwr_email) FROM `photographers`)
